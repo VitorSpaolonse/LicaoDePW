@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Calcule o gasto dele, sabendo que o veículo percorre 8km/litro
+        //1L=8km
+        confirm('Saiba o gasto do seu veiculo!')
+        km=parseFloat(prompt('Digite a quilometragem percorrida:'));
+        vc=parseFloat(prompt('Digite o valor do combustível:'));
+        Litro = km / 8
+        GastoTotal = Litro * vc
+        alert('O gasto total do veiculo foi de: R$ '+GastoTotal);
+    </script>
+</body>
+</html>

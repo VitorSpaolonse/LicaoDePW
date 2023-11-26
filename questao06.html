@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Tendo como dados de entrada a altura e o sexo de uma pessoa a partir de uma caixa de 
+        //combinação, construa uma página que calcule seu peso ideal, utilizando as seguintes 
+        //fórmulas:
+//Para homens: (72.7*h) - 58
+//Para mulheres: (62.1*h) - 44.7 
+//(h = altura)
+confirm('Saiba o seu peso ideal!');
+h=parseFloat(prompt('Digite a sua altura:'));
+genero=parseInt(prompt('Qual o seu sexo? Digite 1 para masculino ou digite 2 para feminino'));
+Homem=0
+Mulher=0
+if (genero=1) {
+    Homem= Homem + (72.7 * h) - 58
+    alert('Seu peso ideal é: '+Homem+' kg');
+} else if (genero=2) {
+    Mulher= Mulher + (62.1 * h) - 44.7 
+    alert('Seu peso ideal é: '+Mulher+' kg');
+}else{
+    alert('Valor inválido!');
+}
+    </script>
+</body>
+</html>
